@@ -10,7 +10,7 @@ import comgustavonascimento.rhfolhadepagamento.entitys.Trabalhador;
 
 
 @Component
-@FeignClient(name="rh-trabalhador",url="localhost:8081",path="/trabalhadores")
+@FeignClient(name="rh-trabalhador",path="/trabalhadores")
 public interface TrabalhadorFeignClient {
 
 	@GetMapping(value="/{id}")
